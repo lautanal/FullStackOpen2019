@@ -1,0 +1,11 @@
+note over selain:
+Tapahtumankäsittelijä lisää uuden muistiinpanon
+listalle ja renderöi uuden näkymän näytölle.
+Palvelimelle lähetetään POST-tyyppinen pyyntö,
+joka sisältää JSON-muodossa uuden muistiinpanon.
+end note
+
+selain->palvelin: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note_spa
+{content: "dsedggd", date: "2020-01-02T19:08:24.437Z"}
+palvelin-->selain: STATUS 201 Created
+
